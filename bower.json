@@ -1,0 +1,17 @@
+{
+  "name": "webfont-food",
+  "description": "Иконки для компонента «Питание» Joomla CMS, плагина «Питание» Wordpress CMS, модуля «Питание» Evolution CMS 1.4.*. Для сайтов Школ Российской федерации",
+  "main": "Gruntfile.js",
+  "authors": [
+    "ProjectSoft <projectsoft2009@yandex.ru>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,23 @@
+* text=auto
+
+**/*.css text eol=lf
+**/*.svg text eol=lf
+**/*.less text eol=lf
+**/*.sublime-project text eol=lf
+**/*.ini text eol=crlf
+.editorconfig text eol=crlf
+bower.json text eol=crlf
+package.json text eol=crlf
+
+/.editorconfig export-ignore
+/.github export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/.npmrc export-ignore
+/*.sublime-* export-ignore
+/package.json export-ignore
+/bower.json export-ignore
+/Gruntfile.js export-ignore
+/LICENSE export-ignore
+/README.md export-ignore
+/src export-ignore

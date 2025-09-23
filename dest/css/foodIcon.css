@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'FoodIcon';
+  src: url('../fonts/FoodIcon.ttf?b98616dec6cd456ce49350ad6d5a7663') format('truetype'), url('../fonts/FoodIcon.woff2?b98616dec6cd456ce49350ad6d5a7663') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="food-icon"]::before,
+[class*=" food-icon"]::before {
+  font-family: 'FoodIcon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.food-icon-folder-open::before {
+  content: "\e900";
+}
+.food-icon-folder-open-o::before {
+  content: "\e901";
+}
+.food-icon-tasks::before {
+  content: "\e902";
+}
+.food-icon-lists::before {
+  content: "\e903";
+}
+.food-icon-print::before {
+  content: "\e904";
+}
+.food-icon-flopy-save::before {
+  content: "\e905";
+}
+.food-icon-download::before {
+  content: "\e906";
+}
+.food-icon-prev::before {
+  content: "\e907";
+}
+.food-icon-next::before {
+  content: "\e908";
+}
+.food-icon-first::before {
+  content: "\e909";
+}
+.food-icon-last::before {
+  content: "\e90a";
+}

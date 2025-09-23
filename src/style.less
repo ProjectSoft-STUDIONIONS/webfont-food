@@ -1,0 +1,93 @@
+@import "variables";
+
+@font-face {
+	font-family: '@{font-family}';
+	src:  url('@{font-path}/@{font-family}.ttf?@{hash}') format('truetype'),
+		url('@{font-path}/@{font-family}.woff2?@{hash}') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="food-icon"],
+[class*=" food-icon"] {
+	&::before {
+		font-family: '@{font-family}' !important;
+		speak: never;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+// Открытая папка
+.food-icon-folder-open {
+	&::before {
+		content: @food-icon-folder-open; 
+	}
+}
+// Открытая папка тонкие линии
+.food-icon-folder-open-o {
+	&::before {
+		content: @food-icon-folder-open-o; 
+	}
+}
+// Таски (Видимость столбцов)
+.food-icon-tasks {
+	&::before {
+		content: @food-icon-tasks; 
+	}
+}
+// Лист (Кол-во строк)
+.food-icon-lists {
+	&::before {
+		content: @food-icon-lists; 
+	}
+}
+// Печать
+.food-icon-print {
+	&::before {
+		content: @food-icon-print; 
+	}
+}
+// Выбор файлов / Загрузка
+.food-icon-flopy-save {
+	&::before {
+		content: @food-icon-flopy-save; 
+	}
+}
+// Экспорт
+.food-icon-download {
+	&::before {
+		content: @food-icon-download; 
+	}
+}
+// Навигация Предыдущий
+.food-icon-prev {
+	&::before {
+		content: @food-icon-prev; 
+	}
+}
+// Навигация Следующий
+.food-icon-next {
+	&::before {
+		content: @food-icon-next; 
+	}
+}
+// Навигация Первый
+.food-icon-first {
+	&::before {
+		content: @food-icon-first; 
+	}
+}
+// Навигация Последний
+.food-icon-last {
+	&::before {
+		content: @food-icon-last; 
+	}
+}
+
