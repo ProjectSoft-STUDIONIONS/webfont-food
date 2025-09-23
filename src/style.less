@@ -2,8 +2,8 @@
 
 @font-face {
 	font-family: '@{font-family}';
-	src:  url('@{font-path}/@{font-family}.ttf?@{hash}') format('truetype'),
-		url('@{font-path}/@{font-family}.woff2?@{hash}') format('woff2');
+	src:  url("@{font-path}/@{font-family}.ttf?@{hash}") format("truetype"),
+		url("@{font-path}/@{font-family}.woff2?@{hash}") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -92,19 +92,25 @@
 }
 // Файл
 .food-icon-file {
-  &:before {
-    content: @food-icon-file;
-  }
+	&:before {
+		content: @food-icon-file;
+	}
 }
 // Курсор Переименовать
 .food-icon-edit {
-  &:before {
-    content: @food-icon-edit;
-  }
+	&:before {
+		content: @food-icon-edit;
+	}
 }
 // Удалить
 .food-icon-trash {
-  &:before {
-    content: @food-icon-trash;
-  }
+	&:before {
+		content: @food-icon-trash;
+	}
+}
+// В новом окне
+.food-icon-new-window {
+	&:before {
+		content: @food-icon-new-window;
+	}
 }

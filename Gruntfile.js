@@ -3,12 +3,13 @@ module.exports = function(grunt) {
 	require('load-grunt-tasks')(grunt);
 	require('time-grunt')(grunt);
 
+	var md5 = require('md5');
+
 	var fs = require('fs'),
 		PACK = grunt.file.readJSON('package.json'),
 		path = require('path'),
 		chalk = require('chalk'),
 		hash = function (...args) {
-			var md5 = require('md5');
 			let result = "",
 				arr = [];
 			if(!args.length){
@@ -31,7 +32,7 @@ module.exports = function(grunt) {
 						arr.push("Not found");
 					}
 				}
-				result = md5(text).toString();
+				result = md5(text).toString().replace(/\s+/g, '-');
 			}
 			arr.push(result);
 			grunt.log.oklns([chalk.cyan("Generate hash:") + "\n" + chalk.yellow(arr.join("\n"))]);
@@ -44,7 +45,7 @@ module.exports = function(grunt) {
 			"ttf2woff2",
 			"copy",
 		],
-		hash: hash('src/style.less'),
+		hash: `${hash('src/style.less')}`.replace(/\s+/g, ""),
 	};
 
 
