@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'FoodIcon';
-  src: url('../fonts/FoodIcon.ttf?b98616dec6cd456ce49350ad6d5a7663') format('truetype'), url('../fonts/FoodIcon.woff2?b98616dec6cd456ce49350ad6d5a7663') format('woff2');
+  src: url('../fonts/FoodIcon.ttf?3ac 76b 5b 5d 1218578cc 5c 6115a 6c 3a 2d') format('truetype'), url('../fonts/FoodIcon.woff2?3ac 76b 5b 5d 1218578cc 5c 6115a 6c 3a 2d') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -49,4 +49,13 @@
 }
 .food-icon-last::before {
   content: "\e90a";
+}
+.food-icon-file:before {
+  content: "\e90b";
+}
+.food-icon-edit:before {
+  content: "\e90c";
+}
+.food-icon-trash:before {
+  content: "\e90d";
 }
