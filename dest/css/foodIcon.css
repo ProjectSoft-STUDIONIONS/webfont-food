@@ -1,6 +1,6 @@
 @font-face {
   font-family: "FoodIcon";
-  src: url("../fonts/FoodIcon.woff2?c17e4d6a3ac7cca1103c0d4d1651ac07") format("woff2"), url("../fonts/FoodIcon.ttf?c17e4d6a3ac7cca1103c0d4d1651ac07") format("truetype");
+  src: url("../fonts/FoodIcon.woff2?6f6866d1b4c769ca8c1ff2a06128e17d") format("woff2"), url("../fonts/FoodIcon.ttf?6f6866d1b4c769ca8c1ff2a06128e17d") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -24,45 +24,54 @@
 .food-icon-edit:before {
   content: "\e901";
 }
-.food-icon-file:before {
+.food-icon-export-pdf:before {
   content: "\e902";
 }
-.food-icon-first:before {
+.food-icon-export-xlsx:before {
   content: "\e903";
 }
-.food-icon-flopy-save:before {
+.food-icon-export:before {
   content: "\e904";
 }
-.food-icon-folder-open-o:before {
+.food-icon-file:before {
   content: "\e905";
 }
-.food-icon-folder-open:before {
+.food-icon-first:before {
   content: "\e906";
 }
-.food-icon-last:before {
+.food-icon-flopy-save:before {
   content: "\e907";
 }
-.food-icon-lists:before {
+.food-icon-folder-open-o:before {
   content: "\e908";
 }
-.food-icon-new-window:before {
+.food-icon-folder-open:before {
   content: "\e909";
 }
-.food-icon-next:before {
+.food-icon-last:before {
   content: "\e90a";
 }
-.food-icon-prev:before {
+.food-icon-lists:before {
   content: "\e90b";
 }
-.food-icon-print:before {
+.food-icon-new-window:before {
   content: "\e90c";
 }
-.food-icon-tasks:before {
+.food-icon-next:before {
   content: "\e90d";
 }
-.food-icon-tools:before {
+.food-icon-prev:before {
   content: "\e90e";
 }
-.food-icon-trash:before {
+.food-icon-print:before {
   content: "\e90f";
+}
+.food-icon-tasks:before {
+  content: "\e910";
+}
+.food-icon-tools:before {
+  content: "\e911";
+}
+.food-icon-trash:before {
+  content: "\e912";
 }

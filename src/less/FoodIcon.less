@@ -1,24 +1,27 @@
 @food-icon-download: "\e900";
 @food-icon-edit: "\e901";
-@food-icon-file: "\e902";
-@food-icon-first: "\e903";
-@food-icon-flopy-save: "\e904";
-@food-icon-folder-open-o: "\e905";
-@food-icon-folder-open: "\e906";
-@food-icon-last: "\e907";
-@food-icon-lists: "\e908";
-@food-icon-new-window: "\e909";
-@food-icon-next: "\e90a";
-@food-icon-prev: "\e90b";
-@food-icon-print: "\e90c";
-@food-icon-tasks: "\e90d";
-@food-icon-tools: "\e90e";
-@food-icon-trash: "\e90f";
+@food-icon-export-pdf: "\e902";
+@food-icon-export-xlsx: "\e903";
+@food-icon-export: "\e904";
+@food-icon-file: "\e905";
+@food-icon-first: "\e906";
+@food-icon-flopy-save: "\e907";
+@food-icon-folder-open-o: "\e908";
+@food-icon-folder-open: "\e909";
+@food-icon-last: "\e90a";
+@food-icon-lists: "\e90b";
+@food-icon-new-window: "\e90c";
+@food-icon-next: "\e90d";
+@food-icon-prev: "\e90e";
+@food-icon-print: "\e90f";
+@food-icon-tasks: "\e910";
+@food-icon-tools: "\e911";
+@food-icon-trash: "\e912";
 
 @font-face {
 	font-family:"FoodIcon";
-	src:url("../fonts/FoodIcon.woff2?c17e4d6a3ac7cca1103c0d4d1651ac07") format("woff2"),
-		url("../fonts/FoodIcon.ttf?c17e4d6a3ac7cca1103c0d4d1651ac07") format("truetype");
+	src:url("../fonts/FoodIcon.woff2?6f6866d1b4c769ca8c1ff2a06128e17d") format("woff2"),
+		url("../fonts/FoodIcon.ttf?6f6866d1b4c769ca8c1ff2a06128e17d") format("truetype");
 	font-weight:normal;
 	font-style:normal;
 	font-display: swap;
@@ -46,6 +49,21 @@
 .food-icon-edit {
 	&:before {
 		content: @food-icon-edit;
+	}
+}
+.food-icon-export-pdf {
+	&:before {
+		content: @food-icon-export-pdf;
+	}
+}
+.food-icon-export-xlsx {
+	&:before {
+		content: @food-icon-export-xlsx;
+	}
+}
+.food-icon-export {
+	&:before {
+		content: @food-icon-export;
 	}
 }
 .food-icon-file {
