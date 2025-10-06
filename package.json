@@ -12,10 +12,11 @@
 		"grunt": "1.6.1",
 		"grunt-contrib-copy": "1.0.0",
 		"grunt-contrib-less": "3.0.0",
-		"grunt-ttf2woff2": "1.0.1",
 		"load-grunt-tasks": "5.1.0",
 		"md5": "2.3.0",
 		"time-grunt": "git+https://github.com/ProjectSoft-STUDIONIONS/time-grunt.git",
-		"ttf2woff2": "5.0.0"
+		"grunt-ttf2woff": "<=1.0.1",
+		"grunt-ttf2woff2": "<=1.0.1",
+		"grunt-webfont": "<=1.6.0"
 	}
 }

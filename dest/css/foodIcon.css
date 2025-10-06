@@ -1,64 +1,68 @@
 @font-face {
-  font-family: 'FoodIcon';
-  src: url("../fonts/FoodIcon.ttf?1bfa6de1db0b9c51ac22a0b7e6a91faa") format("truetype"), url("../fonts/FoodIcon.woff2?1bfa6de1db0b9c51ac22a0b7e6a91faa") format("woff2");
+  font-family: "FoodIcon";
+  src: url("../fonts/FoodIcon.woff2?c17e4d6a3ac7cca1103c0d4d1651ac07") format("woff2"), url("../fonts/FoodIcon.ttf?c17e4d6a3ac7cca1103c0d4d1651ac07") format("truetype");
   font-weight: normal;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
-[class^="food-icon"]::before,
-[class*=" food-icon"]::before {
-  font-family: 'FoodIcon' !important;
-  speak: never;
+[class^="food-icon-"]:before,
+[class*=" food-icon-"]:before {
+  font-family: "FoodIcon" !important;
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.food-icon-folder-open::before {
+.food-icon-download:before {
   content: "\e900";
 }
-.food-icon-folder-open-o::before {
+.food-icon-edit:before {
   content: "\e901";
 }
-.food-icon-tasks::before {
+.food-icon-file:before {
   content: "\e902";
 }
-.food-icon-lists::before {
+.food-icon-first:before {
   content: "\e903";
 }
-.food-icon-print::before {
+.food-icon-flopy-save:before {
   content: "\e904";
 }
-.food-icon-flopy-save::before {
+.food-icon-folder-open-o:before {
   content: "\e905";
 }
-.food-icon-download::before {
+.food-icon-folder-open:before {
   content: "\e906";
 }
-.food-icon-prev::before {
+.food-icon-last:before {
   content: "\e907";
 }
-.food-icon-next::before {
+.food-icon-lists:before {
   content: "\e908";
 }
-.food-icon-first::before {
+.food-icon-new-window:before {
   content: "\e909";
 }
-.food-icon-last::before {
+.food-icon-next:before {
   content: "\e90a";
 }
-.food-icon-file:before {
+.food-icon-prev:before {
   content: "\e90b";
 }
-.food-icon-edit:before {
+.food-icon-print:before {
   content: "\e90c";
 }
-.food-icon-trash:before {
+.food-icon-tasks:before {
   content: "\e90d";
 }
-.food-icon-new-window:before {
+.food-icon-tools:before {
   content: "\e90e";
+}
+.food-icon-trash:before {
+  content: "\e90f";
 }

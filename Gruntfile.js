@@ -3,49 +3,16 @@ module.exports = function(grunt) {
 	require('load-grunt-tasks')(grunt);
 	require('time-grunt')(grunt);
 
-	var md5 = require('md5');
-
 	var fs = require('fs'),
 		PACK = grunt.file.readJSON('package.json'),
 		path = require('path'),
-		chalk = require('chalk'),
-		hash = function (...args) {
-			let result = "",
-				arr = [];
-			if(!args.length){
-				let time = (new Date()).getTime();
-				arr.push("Not arguments");
-				result = md5(time).toString();
-			}else{
-				let text = "";
-				for(let index in args){
-					let file = args[index];
-					file = path.normalize(path.join(__dirname, file));
-					try{
-						let buff = fs.readFileSync(file, {
-							encoding: "utf8"
-						}).toString();
-						text += buff;
-						arr.push(file);
-					}catch(e){
-						// Ничего не делаем
-						arr.push("Not found");
-					}
-				}
-				result = md5(text).toString().replace(/\s+/g, '-');
-			}
-			arr.push(result);
-			grunt.log.oklns([chalk.cyan("Generate hash:") + "\n" + chalk.yellow(arr.join("\n"))]);
-			return result;
-		};
+		chalk = require('chalk');
 	var gc = {
 		version: `${PACK.version}`,
 		default: [
-			"less",
-			"ttf2woff2",
-			"copy",
-		],
-		hash: `${hash('src/style.less')}`.replace(/\s+/g, ""),
+			"webfont",
+			"less"
+		]
 	};
 
 
@@ -58,32 +25,45 @@ module.exports = function(grunt) {
 					compress: false,
 					ieCompat: false,
 					plugins: [],
-					modifyVars: {
-						hash: gc.hash
-					},
 				},
 				files : {
-					// component-3x
 					'dest/css/foodIcon.css' : [
-						//'bower_components/bootstrap/less/bootstrap.less',
-						'src/style.less'
+						'src/less/FoodIcon.less',
 					],
 				},
 			},
 		},
-		ttf2woff2: {
-			default: {
-				src: "src/fonts/*.ttf",
-				dest: "dest/fonts"
-			},
-		},
-		copy: {
-			default: {
-				expand: true,
-				cwd: 'src/fonts',
-				src: '**',
-				dest: 'dest/fonts/',
-			},
+		webfont: {
+			icons: {
+				src: 'src/glyph/*.svg',
+				dest: 'dest/fonts',
+				options: {
+					hashes: true,
+					relativeFontPath: '../fonts/',
+					destLess: 'src/less',
+					font: 'FoodIcon',
+					types: 'ttf,woff2',
+					fontFamilyName: 'FoodIcon',
+					fontFilename: 'FoodIcon',
+					stylesheets: ['less'],
+					syntax: 'bootstrap',
+					engine: 'fontforge',
+					autoHint: false,
+					execMaxBuffer: 1024 * 200,
+					htmlDemo: false,
+					//version: gc.fontVers,
+					normalize: true,
+					startCodepoint: 0xE900,
+					iconsStyles: false,
+					templateOptions: {
+						fontfaceStyles: true,
+						baseClass: 'food-icon',
+						classPrefix: 'food-icon-'
+					},
+					embed: false,
+					template: 'src/font.template'
+				}
+			}
 		}
 	});
 	grunt.registerTask('default',	gc.default);
