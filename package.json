@@ -6,6 +6,8 @@
 	"author": "ProjectSoft <projectsoft2009@yandex.ru>",
 	"main": "Gruntfile.js",
 	"scripts": {
+		"inst": "npm i",
+		"build": "grunt -v",
 		"test": "npm i"
 	},
 	"dependencies": {

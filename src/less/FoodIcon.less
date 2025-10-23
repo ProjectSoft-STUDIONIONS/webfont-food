@@ -3,25 +3,27 @@
 @food-icon-export-pdf: "\e902";
 @food-icon-export-xlsx: "\e903";
 @food-icon-export: "\e904";
-@food-icon-file: "\e905";
-@food-icon-first: "\e906";
-@food-icon-flopy-save: "\e907";
-@food-icon-folder-open-o: "\e908";
-@food-icon-folder-open: "\e909";
-@food-icon-last: "\e90a";
-@food-icon-lists: "\e90b";
-@food-icon-new-window: "\e90c";
-@food-icon-next: "\e90d";
-@food-icon-prev: "\e90e";
-@food-icon-print: "\e90f";
-@food-icon-tasks: "\e910";
-@food-icon-tools: "\e911";
-@food-icon-trash: "\e912";
+@food-icon-file-: "\e905";
+@food-icon-file-pdf: "\e906";
+@food-icon-file-xlsx: "\e907";
+@food-icon-first: "\e908";
+@food-icon-flopy-save: "\e909";
+@food-icon-folder-open-o: "\e90a";
+@food-icon-folder-open: "\e90b";
+@food-icon-last: "\e90c";
+@food-icon-lists: "\e90d";
+@food-icon-new-window: "\e90e";
+@food-icon-next: "\e90f";
+@food-icon-prev: "\e910";
+@food-icon-print: "\e911";
+@food-icon-tasks: "\e912";
+@food-icon-tools: "\e913";
+@food-icon-trash: "\e914";
 
 @font-face {
 	font-family:"FoodIcon";
-	src:url("../fonts/FoodIcon.woff2?6f6866d1b4c769ca8c1ff2a06128e17d") format("woff2"),
-		url("../fonts/FoodIcon.ttf?6f6866d1b4c769ca8c1ff2a06128e17d") format("truetype");
+	src:url("../fonts/FoodIcon.woff2?0187038d1bbad00f07983e313531a92d") format("woff2"),
+		url("../fonts/FoodIcon.ttf?0187038d1bbad00f07983e313531a92d") format("truetype");
 	font-weight:normal;
 	font-style:normal;
 	font-display: swap;
@@ -66,9 +68,19 @@
 		content: @food-icon-export;
 	}
 }
-.food-icon-file {
+.food-icon-file- {
 	&:before {
-		content: @food-icon-file;
+		content: @food-icon-file-;
+	}
+}
+.food-icon-file-pdf {
+	&:before {
+		content: @food-icon-file-pdf;
+	}
+}
+.food-icon-file-xlsx {
+	&:before {
+		content: @food-icon-file-xlsx;
 	}
 }
 .food-icon-first {
