@@ -11,20 +11,21 @@
 @food-icon-flopy-save: "\e90a";
 @food-icon-folder-open-o: "\e90b";
 @food-icon-folder-open: "\e90c";
-@food-icon-last: "\e90d";
-@food-icon-lists: "\e90e";
-@food-icon-new-window: "\e90f";
-@food-icon-next: "\e910";
-@food-icon-prev: "\e911";
-@food-icon-print: "\e912";
-@food-icon-tasks: "\e913";
-@food-icon-tools: "\e914";
-@food-icon-trash: "\e915";
+@food-icon-github: "\e90d";
+@food-icon-last: "\e90e";
+@food-icon-lists: "\e90f";
+@food-icon-new-window: "\e910";
+@food-icon-next: "\e911";
+@food-icon-prev: "\e912";
+@food-icon-print: "\e913";
+@food-icon-tasks: "\e914";
+@food-icon-tools: "\e915";
+@food-icon-trash: "\e916";
 
 @font-face {
 	font-family:"FoodIcon";
-	src:url("../fonts/FoodIcon.woff2?340a8f974ce37df777c24872b2560ad0") format("woff2"),
-		url("../fonts/FoodIcon.ttf?340a8f974ce37df777c24872b2560ad0") format("truetype");
+	src:url("../fonts/FoodIcon.woff2?dc89e4a2f0b35db3b908e28ac3abbe3f") format("woff2"),
+		url("../fonts/FoodIcon.ttf?dc89e4a2f0b35db3b908e28ac3abbe3f") format("truetype");
 	font-weight:normal;
 	font-style:normal;
 	font-display: swap;
@@ -107,6 +108,11 @@
 .food-icon-folder-open {
 	&:before {
 		content: @food-icon-folder-open;
+	}
+}
+.food-icon-github {
+	&:before {
+		content: @food-icon-github;
 	}
 }
 .food-icon-last {
